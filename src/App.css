@@ -1,0 +1,431 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.container {
+  width: 100%;
+  max-width: 320px;
+  padding: 12px;
+}
+
+.mainHeader{
+  width: 100%;
+  height: 9.2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:10.3vw;
+  
+}
+.navigation-btn{ 
+    border-radius: 24px; 
+    border: none;
+    width: 25vw;
+    height: 6.4vh;
+    opacity: 0.1;  
+    transition: opacity 0.3s ease;  
+  }
+  
+  .navigation-btn:hover {
+    opacity: 1; 
+  }
+  .lg-btn{
+    display: flex;
+    border-radius: 24px;
+    gap:1.25vw;
+  }
+  .select-btn1, .select-btn2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 23.25vw;
+    height:6.33vh;
+    padding: 10px;
+    gap: 4px;
+    background:#FFFFFF0A;
+    border-radius: 32px;
+    border: none;
+  }
+ 
+  .currency-div {
+    display: flex;
+    position: relative;
+    width: 6.25vw;
+    height: 6.25vw;
+    align-items: center;
+    justify-content: center;
+  }
+  .lang-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6.25vw;
+    height: 6.25vw;
+
+  }
+  
+
+.currency-logo{
+  display: flex;
+  width: 6.25vw;
+  height: 3.25vh;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+}
+.dolar {
+  position: absolute;
+  width: 2.7vw;
+  height: 2.7vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  font-weight: bold;
+  color: white; 
+}
+.lang-logo{
+  width: 6.25vw;
+  height: 3.25vh;
+}
+.text-EN {
+  color: rgb(249, 248, 248);  
+  font-size:  0.75rem;  
+}
+
+
+.rightlanguage{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 11.25vw;
+  height: 6.33vh;
+  border: none;
+  border-radius: 50px;
+  background: #FFFFFF0A;
+}
+.selected-lang-logo{
+  width: 6.25vw;
+  height: 3.25vh;
+}
+.currencyDiv{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 8.45vh;
+  left: 39vw;
+}
+.currencyUl{
+  animation: slideDown 1s ease-out; 
+}
+@keyframes slideDown {
+  0% {
+    transform: translateY(-4.46vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+}
+
+.currencyLi{
+  list-style: none;
+}
+.currencyLi > button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 23.1vw;
+  height: 6.3vh;
+  gap: 1.25vw;
+  border:none;
+  background:  #223440;
+}
+.currencyLi > button:hover{
+  background: #3D4F5A;
+}
+.currencyLi:nth-child(1) > button{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.currencyLi:nth-child(3) > button{
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.languageDiv{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 8.45vh;
+  left: 64vw;
+}
+.languageUl{
+    animation: slideDown 1s ease-out; 
+  }
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-4.46vh);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  
+  }
+ 
+.languageLi{
+  list-style: none;
+}
+.languageLi > button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:20.3vw;
+  height: 6.33vh;
+  gap: 1.25vw;
+  border:none;
+  background:  #223440;
+}
+
+.languageLi > button:hover{
+  background: #3D4F5A;
+}
+.languageLi:nth-child(1) > button{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.languageLi:nth-child(3) > button{
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.language-logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+}
+.loginRegistrationOrders{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7.74vh;
+  justify-content: center;
+  height: 80vh;
+}
+.loginreg{
+width: 82.5vw;
+height: 7.74vh;
+border-radius: 7.74vh;
+font-family: "Helvetica";
+background: #FFFFFF;
+color: #000000CC;
+padding: 12px;
+font-size: 12px;
+}
+.orders{
+  width: 92.5vw;
+  height: 6.33vh;
+  border-radius: 7.74vh;
+  font-family: "Helvetica";
+  background: #FFFFFF;
+  color: #000000;
+  font-weight: 700;
+  font-size: 12px;
+  
+}
+
+
+
+@media (min-width: 414px) {
+    .currency-div {
+        width: 7vw; 
+        height: 7vw;
+    }
+
+    .currency-logo {
+        width: 5.5vw; 
+        height: 3vh;
+    }
+
+    .dolar {
+        width: 2.4vw;  
+        height: 2.4vh;
+        font-size: 1rem; 
+    }
+
+    .rightlanguage {
+        width: 10vw;  
+        height: 6vh;
+        border-radius: 50px;
+    }
+    .text-EN {
+      color: rgb(249, 248, 248);  
+      font-size:  1.2rem;  
+    }
+  
+
+    .currencyDiv {
+        top: 8vh;  
+        left: 38vw;
+    }
+  
+  .navigation-btn{ 
+    width: 25vw;
+    height: 6.4vh;
+  }
+
+    .loginRegistrationOrders{
+      height: 80vh;
+    }
+    .loginreg{
+    width: 51vw;
+    height: 7vh;
+    padding: 8px;
+    font-size: 20px;
+    }
+    .orders{
+      width: 60vw;
+      height: 6.33vh;
+      font-size: 20px;
+      
+    }
+
+  }
+  
+  @media (min-width: 768px) {
+    .loginreg{
+    width: 55vw;
+    height: 8vh;
+    font-size: 1.35rem;
+    }
+    .orders{
+    width: 60vw;
+    height: 8vh;
+    font-size: 1.35rem;
+      
+    }
+    .currencyDiv{
+      top: 10vh;
+      left: 36vw;
+    }
+    .languageDiv{
+
+      top: 10vh;
+      left: 61vw;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .loginreg{
+        width: 50vw; 
+        height: 7vh; 
+        font-size: 1.3rem;
+    }
+    .orders{
+        width: 55vw; 
+        height: 7vh;
+        font-size: 1.3rem;
+    }
+    .currencyDiv{
+        top: 9vh; 
+        left: 38vw;
+    }
+    .languageDiv{
+        top: 9vh; 
+        left: 60vw;
+    }
+    .navigation-btn{ 
+        width: 22vw;
+        height: 8vh;
+        border-radius: 50px;
+    }
+    .currency-logo{
+        width: 7vw;
+        height: 4.5vh;
+    }
+    .dolar {
+        width: 2.8vw;
+        height: 2.8vh;
+    }
+    .lang-logo{
+        width: 7vw;
+        height: 4.5vh;
+    }
+    .text-EN {
+        font-size: 1.15rem;  
+    }
+    .selected-lang-logo{
+        width: 7vw;
+        height: 4.5vh;
+    }
+}
+
+  @media (min-width: 1024px) {
+    .loginreg{
+      width: 25vw;
+      height: 8vh;
+      font-size: 1.35rem;
+      }
+      .orders{
+      width: 30vw;
+      height: 8vh;
+      font-size: 1.35rem;
+        
+      }
+      .currencyDiv{
+        top: 10vh;
+        left: 36vw;
+      }
+      .languageDiv{
+  
+        top: 10vh;
+        left: 61vw;
+      }
+      .navigation-btn{ 
+        width: 20vw;
+        height: 9vh;
+        border-radius: 50px;
+      }
+      .currency-logo{
+        width: 8.25vw;
+        height: 5.25vh;
+      }
+      .dolar {
+        width: 3vw;
+        height: 3vh;
+      }
+      .lang-logo{
+        width: 8.25vw;
+        height: 5.25vh;
+      }
+      .text-EN {
+        font-size: 1.1rem;  
+      }
+      .selected-lang-logo{
+        width: 8.25vw;
+        height: 5.25vh;
+      }
+      
+  }
+  .reg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+}
+
+.registrationDiv {
+    width: 92.5vw;
+    height: 76.7vh;
+    border-radius: 16px;
+    background: #181B21;
+}

@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Helvetica';
+  src: url('./assets/helvetica_cyr_oblique.ttf') format('ttf');
+  font-weight: 400;
+  font-style:normal
+}
+a {
+  text-decoration: none;  
+}
+
+body {
+  font-family: 'Helvetica';
+  margin: 0;
+  padding: 8px;
+  background-color: #060606;
+}
+
+.text-EN{
+  font-size: 12px;
+  font-weight: 400;
+  font-family: 'Helvetica';
+  color: white;
+ }
