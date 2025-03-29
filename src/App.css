@@ -220,7 +220,10 @@
   justify-content: center;
   height: 80vh;
 }
-.loginreg{
+.loginReg{
+display:flex;
+align-items: center;
+justify-content: center;
 width: 82.5vw;
 height: 7.74vh;
 border-radius: 7.74vh;
@@ -290,6 +293,11 @@ font-size: 12px;
     height: 7vh;
     padding: 8px;
     font-size: 20px;
+    }
+    .logregblock{
+      display: flex;
+      flex-direction: column;
+      gap: 1.5vh;
     }
     .orders{
       width: 60vw;
@@ -424,8 +432,127 @@ font-size: 12px;
 }
 
 .registrationDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:4.2vh;
     width: 92.5vw;
-    height: 76.7vh;
+    padding: 1rem;
     border-radius: 16px;
     background: #181B21;
 }
+.registration{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color:rgba(0, 0, 0, 0.8);
+  font-size: 0.75rem;
+}
+.logos{
+  display: flex;
+  gap:0.75rem;
+  }
+  
+
+.logreg{
+  display: flex;
+  width: 70vw;
+  height: auto;
+  padding: 12px;
+  background: #2D2F35;
+  border-radius: 24px;
+  gap:1.25vw;
+
+}
+.loginregcheck{
+  display: flex;
+  gap:6.25vw;
+
+}
+.loginReg{
+  display:flex;
+  width: 33vw;
+  height: 5.6vh;
+  border-radius: 24px;
+  border:none;
+  background-color: transparent;
+  color:white;
+  font-family: "Helvetica" ;
+  font-size: 12px;
+  letter-spacing: 3%;
+
+}
+.registrationReg{
+  width: 33vw;
+  height: 5.6vh;
+  border-radius: 24px;
+  border:none;
+  color:#000000CC;
+  font-size: 12px;
+  letter-spacing: 3%;
+  
+}
+.checkbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7.5vw;
+  height: 7.5vh;
+}
+.registration{
+  display:flex;
+  flex-direction: column;
+  gap:1.76vh;
+  width: 82.5vw;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 12;
+  font-family: "Helvetica" ;
+
+}
+input{
+  width: 82.5vw;
+  height: 7.74vh;
+  border-radius: 16px;
+  border: 1px;
+  border-color: #FFFFFF1F 12%;
+  background: #0D0F11;
+  padding:  12px ;
+  color: #FFFFFF;
+
+}
+.checkboxAndText{
+  display: flex;
+  width: 80vw;
+  justify-content: start;
+  gap:2.5vw;
+}
+.checkboxSoc {
+  width: 6.5vw;
+  height: 6.5vw;
+  background-color: #20242C;
+  border: 1px solid #f1f7f2;
+  border-radius: 4px;
+}
+
+
+
+.useSoc{
+  display:flex;
+  opacity: 50%;
+  align-items: center;
+  
+}
+.registrationAction{
+  width: 82.5vw;
+  height: 7.74vh;
+  border-radius: 20px;
+  background: #FFFFFF;
+  color: rgba(0, 0, 0, 0.8); 
+  font-size: 12px;
+  font-family: "Helvetica" ;
+  letter-spacing: 3%;
+
+}
+

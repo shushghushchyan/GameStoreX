@@ -9,7 +9,7 @@ const MainLoginRegistration: React.FC = () => {
 
   return (
     <div className='loginRegistrationOrders'>
-      <div>         
+      <div className='logregblock'>         
         <button className='loginreg' onClick={() => navigate('/Registration')}>Registration</button>  
         <button className='loginreg' onClick={() => navigate('/Login')}>Login</button>
       </div>

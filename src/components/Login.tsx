@@ -1,8 +1,10 @@
 
 export default function Login() {
   return (
-    <div>
-      
+    <div style={{
+        color:'white'
+    }}>
+      kljnlnlljljlj
     </div>
   )
 }
