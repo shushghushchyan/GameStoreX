@@ -66,8 +66,6 @@
     height: 6.25vw;
 
   }
-  
-
 .currency-logo{
   display: flex;
   width: 6.25vw;
@@ -220,7 +218,7 @@
   justify-content: center;
   height: 80vh;
 }
-.loginReg{
+.loginRegist{
 display:flex;
 align-items: center;
 justify-content: center;
@@ -232,7 +230,20 @@ background: #FFFFFF;
 color: #000000CC;
 padding: 12px;
 font-size: 12px;
+border-radius: 20px;
 }
+.loginregMain{
+  width: 82.5vw;
+  height: 7vh;
+  padding: 8px;
+  font-size: 0.75rem;
+  border-radius: 1.25rem;
+  font-weight: 400;
+  background:#FFFFFF;
+  font-family: "Helvetica";
+  letter-spacing: 3%;
+  
+  }
 .orders{
   width: 92.5vw;
   height: 6.33vh;
@@ -241,188 +252,11 @@ font-size: 12px;
   background: #FFFFFF;
   color: #000000;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 0.75rem;
+  letter-spacing: 3%;
   
 }
 
-
-
-@media (min-width: 414px) {
-    .currency-div {
-        width: 7vw; 
-        height: 7vw;
-    }
-
-    .currency-logo {
-        width: 5.5vw; 
-        height: 3vh;
-    }
-
-    .dolar {
-        width: 2.4vw;  
-        height: 2.4vh;
-        font-size: 1rem; 
-    }
-
-    .rightlanguage {
-        width: 10vw;  
-        height: 6vh;
-        border-radius: 50px;
-    }
-    .text-EN {
-      color: rgb(249, 248, 248);  
-      font-size:  1.2rem;  
-    }
-  
-
-    .currencyDiv {
-        top: 8vh;  
-        left: 38vw;
-    }
-  
-  .navigation-btn{ 
-    width: 25vw;
-    height: 6.4vh;
-  }
-
-    .loginRegistrationOrders{
-      height: 80vh;
-    }
-    .loginreg{
-    width: 51vw;
-    height: 7vh;
-    padding: 8px;
-    font-size: 20px;
-    }
-    .logregblock{
-      display: flex;
-      flex-direction: column;
-      gap: 1.5vh;
-    }
-    .orders{
-      width: 60vw;
-      height: 6.33vh;
-      font-size: 20px;
-      
-    }
-
-  }
-  
-  @media (min-width: 768px) {
-    .loginreg{
-    width: 55vw;
-    height: 8vh;
-    font-size: 1.35rem;
-    }
-    .orders{
-    width: 60vw;
-    height: 8vh;
-    font-size: 1.35rem;
-      
-    }
-    .currencyDiv{
-      top: 10vh;
-      left: 36vw;
-    }
-    .languageDiv{
-
-      top: 10vh;
-      left: 61vw;
-    }
-  }
-
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .loginreg{
-        width: 50vw; 
-        height: 7vh; 
-        font-size: 1.3rem;
-    }
-    .orders{
-        width: 55vw; 
-        height: 7vh;
-        font-size: 1.3rem;
-    }
-    .currencyDiv{
-        top: 9vh; 
-        left: 38vw;
-    }
-    .languageDiv{
-        top: 9vh; 
-        left: 60vw;
-    }
-    .navigation-btn{ 
-        width: 22vw;
-        height: 8vh;
-        border-radius: 50px;
-    }
-    .currency-logo{
-        width: 7vw;
-        height: 4.5vh;
-    }
-    .dolar {
-        width: 2.8vw;
-        height: 2.8vh;
-    }
-    .lang-logo{
-        width: 7vw;
-        height: 4.5vh;
-    }
-    .text-EN {
-        font-size: 1.15rem;  
-    }
-    .selected-lang-logo{
-        width: 7vw;
-        height: 4.5vh;
-    }
-}
-
-  @media (min-width: 1024px) {
-    .loginreg{
-      width: 25vw;
-      height: 8vh;
-      font-size: 1.35rem;
-      }
-      .orders{
-      width: 30vw;
-      height: 8vh;
-      font-size: 1.35rem;
-        
-      }
-      .currencyDiv{
-        top: 10vh;
-        left: 36vw;
-      }
-      .languageDiv{
-  
-        top: 10vh;
-        left: 61vw;
-      }
-      .navigation-btn{ 
-        width: 20vw;
-        height: 9vh;
-        border-radius: 50px;
-      }
-      .currency-logo{
-        width: 8.25vw;
-        height: 5.25vh;
-      }
-      .dolar {
-        width: 3vw;
-        height: 3vh;
-      }
-      .lang-logo{
-        width: 8.25vw;
-        height: 5.25vh;
-      }
-      .text-EN {
-        font-size: 1.1rem;  
-      }
-      .selected-lang-logo{
-        width: 8.25vw;
-        height: 5.25vh;
-      }
-      
-  }
   .reg {
     display: flex;
     flex-direction: column;
@@ -471,7 +305,7 @@ font-size: 12px;
   gap:6.25vw;
 
 }
-.loginReg{
+.loginRegist{
   display:flex;
   width: 33vw;
   height: 5.6vh;
@@ -480,17 +314,21 @@ font-size: 12px;
   background-color: transparent;
   color:white;
   font-family: "Helvetica" ;
-  font-size: 12px;
+  font-size: 0.75rem;
   letter-spacing: 3%;
 
 }
 .registrationReg{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 33vw;
   height: 5.6vh;
   border-radius: 24px;
   border:none;
   color:#000000CC;
-  font-size: 12px;
+  font-size: 0.75rem;
   letter-spacing: 3%;
   
 }
@@ -501,7 +339,7 @@ font-size: 12px;
   width: 7.5vw;
   height: 7.5vh;
 }
-.registration{
+.registrationREG{
   display:flex;
   flex-direction: column;
   gap:1.76vh;
@@ -542,6 +380,7 @@ input{
   display:flex;
   opacity: 50%;
   align-items: center;
+  font-size: 0.75rem;
   
 }
 .registrationAction{
@@ -555,4 +394,283 @@ input{
   letter-spacing: 3%;
 
 }
+.forgotepasswordDiv{
+  width: 82.5vw;
+  height: auto;
+}
+.forgotepassword{
+font-size: 0.75rem;
+font-family: "Helvetica" ;
+letter-spacing: 3%;
+font-weight: 400;
+color: rgba(255, 255, 255, 1);
+opacity: 50%;
+text-decoration: underline;
+}
 
+@media (min-width: 414px) {
+  
+  
+    .currency-div {
+        width: 7vw; 
+        height: 7vw;
+    }
+
+    .currency-logo {
+        width: 5.5vw; 
+        height: 3vh;
+    }
+
+    .dolar {
+        width: 2.4vw;  
+        height: 2.4vh;
+        font-size: 1rem; 
+    }
+
+    .rightlanguage {
+        width: 10vw;  
+        height: 6vh;
+        border-radius: 50px;
+    }
+    .text-EN {
+      color: rgb(249, 248, 248);  
+      font-size:  1.2rem;  
+    }
+
+  
+
+    .currencyDiv {
+        top: 8vh;  
+        left: 38vw;
+    }
+  
+  .navigation-btn{ 
+    width: 25vw;
+    height: 6.4vh;
+  }
+
+    .loginRegistrationOrders{
+      height: 80vh;
+    }
+    .loginregMain{
+    width: 51vw;
+    height: 7vh;
+    padding: 8px;
+    font-size: 20px;
+    border-radius: 1.25rem;
+    background:#FFFFFF;
+    
+    }
+    .logregblock{
+      display: flex;
+      flex-direction: column;
+      gap: 1.5vh;
+    }
+    .orders{
+      width: 60vw;
+      height: 6.33vh;
+      font-size: 20px;
+      
+    }
+    .checkboxSoc {
+      width: 3.5vw;
+      height: 3.5vw;
+    }
+   
+
+  }
+  
+  @media (min-width: 768px) {
+    .loginregMain{
+    width: 55vw;
+    height: 8vh;
+    font-size: 1.35rem;
+    border-radius: 1.25rem;
+    background:#FFFFFF;
+    }
+    .orders{
+    width: 60vw;
+    height: 8vh;
+    font-size: 1.35rem;
+      
+    }
+    .currencyDiv{
+      top: 10vh;
+      left: 36vw;
+    }
+    .languageDiv{
+
+      top: 10vh;
+      left: 61vw;
+    }
+    .checkboxSoc {
+      width: 2.5vw;
+      height: 2.5vw;
+      background-color: #20242C;
+      border: 1px solid #f1f7f2;
+      border-radius: 4px;
+    }
+    .registrationREG{
+      width: 60vw;
+    }
+    input{
+      width: 55vw;
+      height: auto;
+    }
+    .registrationAction{
+      width: 55vw;
+      height: 6vh;
+    }
+    .loginregcheck{
+      display: flex;
+      gap:5vw;
+    
+    }
+    .logreg{
+      width: 60vw;
+      height: auto;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .loginreg{
+        width: 50vw; 
+        height: 7vh; 
+        font-size: 1.3rem;
+    }
+    .orders{
+        width: 55vw; 
+        height: 7vh;
+        font-size: 1.3rem;
+    }
+    .currencyDiv{
+        top: 9vh; 
+        left: 38vw;
+    }
+    .languageDiv{
+        top: 9vh; 
+        left: 60vw;
+    }
+    .navigation-btn{ 
+        width: 22vw;
+        height: 8vh;
+        border-radius: 50px;
+    }
+    .currency-logo{
+        width: 7vw;
+        height: 4.5vh;
+    }
+    .dolar {
+        width: 2.8vw;
+        height: 2.8vh;
+    }
+    .lang-logo{
+        width: 7vw;
+        height: 4.5vh;
+    }
+    .text-EN {
+        font-size: 1.15rem;  
+    }
+    .selected-lang-logo{
+        width: 7vw;
+        height: 4.5vh;
+    }
+    .checkboxSoc {
+      width: 3.5vw;
+      height: 3.5vw;
+      background-color: #20242C;
+      border: 1px solid #f1f7f2;
+      border-radius: 4px;
+    }
+    .registrationREG{
+      width: 60vw;
+    }
+    input{
+      width: 55vw;
+      height: auto;
+    }
+    .registrationAction{
+      width: 40vw;
+      height: 6vh;
+    }
+    .loginregcheck{
+      gap:4vw;
+    }
+    .logreg{
+      width: 40vw;
+    }
+    
+}
+
+  @media (min-width: 1024px) {
+    .loginreg{
+      width: 25vw;
+      height: 8vh;
+      font-size: 1.35rem;
+      }
+      .orders{
+      width: 30vw;
+      height: 8vh;
+      font-size: 1.35rem;
+        
+      }
+      .currencyDiv{
+        top: 10vh;
+        left: 36vw;
+      }
+      .languageDiv{
+  
+        top: 10vh;
+        left: 61vw;
+      }
+      .navigation-btn{ 
+        width: 20vw;
+        height: 9vh;
+        border-radius: 50px;
+      }
+      .currency-logo{
+        width: 8.25vw;
+        height: 5.25vh;
+      }
+      .dolar {
+        width: 3vw;
+        height: 3vh;
+      }
+      .lang-logo{
+        width: 8.25vw;
+        height: 5.25vh;
+      }
+      .text-EN {
+        font-size: 1.1rem;  
+      }
+      .selected-lang-logo{
+        width: 8.25vw;
+        height: 5.25vh;
+      }
+      .checkboxSoc {
+        width: 3vw;
+        height: 3vw;
+        background-color: #20242C;
+        border: 1px solid #f1f7f2;
+        border-radius: 4px;
+      }
+      .registrationREG{
+        width: 60vw;
+      }
+      input{
+        width: 55vw;
+        height: auto;
+      }
+      .registrationAction{
+        width: 40vw;
+        height: 6vh;
+      }
+      .loginregcheck{
+        gap:4vw;
+      }
+      .logreg{
+        width: 40vw;
+      }
+      
+      
+  }
