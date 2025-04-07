@@ -419,6 +419,9 @@ text-decoration: underline;
   gap: 2.4vh;
 }
 .order{
+  display: flex;
+  flex-direction: column;
+  gap: 2.4vh;
   width: 100%;
   height: 90.8vh;
   padding:0.75rem;
@@ -428,20 +431,35 @@ text-decoration: underline;
   gap:0.5rem;
   padding: 0.5rem;
 }
-.orderH1{
+.order__title{
+  display: flex;
+  justify-content: start;
+  width: 22.1vw;
+  display: flex;
+  font-size:0.625rem;
   font-family: "Helvetica";
   color: #ffffff;
-  font-size: 1.25rem ;
-  font-weight: 700;
+  font-weight: 400;
+  letter-spacing: 3%;
+  opacity: 50%;
+}
+.order__value{
+  width: 22.1vw;
+  display: flex;
+  justify-content: start;
+  font-family: "Helvetica";
+  color: #ffffff;
+  font-size: 0.75rem ;
+  font-weight: 400;
   letter-spacing: 3%;
 }
 .card{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
   width: 100%;
   height: auto;
+  border-radius: 16px;
   padding: 0.75rem;
   background: #2D2F35;
   
@@ -457,23 +475,16 @@ text-decoration: underline;
 .lineOforder{
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width:82.5vw;
   height: auto;
   gap:4px
 }
-h6{
-  display: flex;
-  font-size:0.625rem;
-  font-family: "Helvetica";
-  color: #ffffff;
-  font-weight: 400;
-  letter-spacing: 3%;
-  opacity: 50%;
-}
+
 .order__column {
   display: flex;
   flex-direction: column;
-  width: 32%;
+  gap:4px;
+  width: 22.1vw;
   height: auto;
 }
 .order__block{ 
