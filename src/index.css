@@ -32,3 +32,17 @@ body {
   font-family: 'Helvetica';
   color: white;
  }
+input[type="submit"],
+input[type="button"],
+button {
+  -webkit-appearance: none;
+  appearance: none;
+  color: black;
+
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  background-color: white !important;
+  /* transition: background-color 5000s ease-in-out 0s; */
+}
