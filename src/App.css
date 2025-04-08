@@ -421,6 +421,7 @@ text-decoration: underline;
 .order{
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2.4vh;
   width: 100%;
   height: 90.8vh;
@@ -479,7 +480,13 @@ text-decoration: underline;
   height: auto;
   gap:4px
 }
-
+.orderH1{
+  font-size: 1.25rem;
+  color: #ffffff;
+  font-family: "Helvetica";
+  font-weight: 700;
+  letter-spacing: 3%;
+}
 .order__column {
   display: flex;
   flex-direction: column;
@@ -497,9 +504,85 @@ text-decoration: underline;
   letter-spacing: 3%;
 
 }
+.secondDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width:100%;
+  height: 19.8vh;
+  border-radius:16px;
+  gap:0.75vh;
+}
+.topDiv{
+  width: 100%;
+  height: 17px;
+  display:flex;
+  justify-content: space-between;
+  color:white
+}
+.bottomDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 88px;
+  display:flex;
+  background: #2D2F35; 
+  border-radius: 16px;
+  color:#f1f7f2
+
+}
+.innerCenterDivTop{
+  width:49vw ;
+  height: auto;
+  display:flex;
+  justify-content: space-between;
+}
+.innerCenterDivBottom{
+  width:49vw ;
+  height: auto;
+  display:flex;
+  justify-content: space-between;
+}
+
+.bottomAsk{
+  font-family: Helvetica;
+  font-weight: 400;
+  font-size: 0.75rem;
+  width: 100%;
+  height: 7.74vh;
+  border-radius: 20px;
+}
+.centerDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.deleted{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14.3vw;
+  height: auto;
+  color: #FFFFFF;
+  font-family: Helvetica;
+  font-size: 0.75rem;
+  opacity: 50%;
+  text-decoration: line-through;
+
+}
+.total {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18.4vw;
+  height: 4.9vh;
+  border-radius: 24px;
+  background-color: rgba(255, 255, 255, 0.12);
+}
 
 @media (min-width: 414px) {
-  
   
     .currency-div {
         width: 7vw; 
@@ -567,7 +650,13 @@ text-decoration: underline;
       height: 3.5vw;
     }
    
-
+    .bottomAsk{
+      width: 45vw;
+    }
+    .deleted{
+      font-size: 1rem;
+    }
+ 
   }
   
   @media (min-width: 768px) {
@@ -619,6 +708,15 @@ text-decoration: underline;
     .logreg{
       width: 60vw;
       height: auto;
+    }
+    .bottomAsk{
+      width: 45vw;
+    }
+    .deleted{
+      font-size: 1rem;
+    }
+    .total {
+      width: 10vw;
     }
   }
 
@@ -672,6 +770,10 @@ text-decoration: underline;
       border: 1px solid #f1f7f2;
       border-radius: 4px;
     }
+     .deleted{
+      font-size: 1rem;
+    
+    }
     .registrationREG{
       width: 60vw;
     }
@@ -689,6 +791,16 @@ text-decoration: underline;
     .logreg{
       width: 40vw;
     }
+    .bottomAsk{
+      width: 45vw;
+    }
+    .deleted{
+      font-size: 1rem;
+    }
+    .total {
+      width: 10vw;
+    }
+    
     
 }
 
@@ -761,6 +873,14 @@ text-decoration: underline;
       .logreg{
         width: 40vw;
       }
-      
+      .bottomAsk{
+        width: 45vw;
+      }
+      .deleted{
+        font-size: 1rem;
+      }
+      .total {
+        width: 10vw;
+      }
       
   }
