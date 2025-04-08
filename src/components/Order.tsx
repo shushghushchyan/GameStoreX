@@ -1,14 +1,9 @@
-
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import success from '../assets/Logos/success.svg';
 import { ordersArray } from '../Data/ordersData';
 import Header from './Header.js';
 import chackbox from '../assets/Logos/checkbox.svg';
-
-interface Params {
-  index?: string;
-}
 
 interface OrderType {
   transactionId: string;
@@ -20,9 +15,8 @@ interface OrderType {
 }
 
 export default function Order() {
-    const params = useParams();
-    const index = params.index;
-        const [order, setOrder] = useState<OrderType | null>(null);
+  const { index } = useParams<{ index: string | undefined }>();
+  const [order, setOrder] = useState<OrderType | null>(null);
 
   useEffect(() => {
     if (index !== undefined && !isNaN(Number(index))) {
