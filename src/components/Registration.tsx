@@ -6,7 +6,7 @@ import google from "../assets/Logos/google.svg";
 import discord from "../assets/Logos/discord.svg";
 import apple from "../assets/Logos/apple.svg";
 import checkbox from "../assets/Logos/checkbox.svg";
-import { registerUser } from "../api"; // API function
+import { registerUser } from "../api"; 
 
 interface Logo {
   src: string;
@@ -57,8 +57,7 @@ const Registration: React.FC = () => {
         console.log("User registered:", user);
         alert("Registration successful!");
         navigate("/login");
-        // Optionally navigate
-        // navigate("/login");
+        
       } catch (error: any) {
         console.error("Error during registration:", error);
         setErrors({ email: "Registration failed. Please try again." });
@@ -93,7 +92,6 @@ const Registration: React.FC = () => {
           </button>
         </div>
 
-        {/* Registration form */}
         <form className="registrationREG" onSubmit={handleSubmit}>
           <input
             type="text"
