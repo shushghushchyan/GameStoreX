@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import telegram from "../assets/Logos/telegram.svg";
 import facebook from "../assets/Logos/facebook.svg";
 import google from "../assets/Logos/google.svg";
 import discord from "../assets/Logos/discord.svg";
 import apple from "../assets/Logos/apple.svg";
 import checkbox from "../assets/Logos/checkbox.svg";
-import { registerUser } from "../api";
+import { registerUser } from "../api"; // API function
 
 interface Logo {
   src: string;
@@ -16,6 +16,7 @@ interface Logo {
 
 const Registration: React.FC = () => {
   const navigate = useNavigate();
+  const location = useLocation(); 
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -31,7 +32,7 @@ const Registration: React.FC = () => {
   ];
 
   const validateEmail = (email: string) => {
-    return /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email) || /^[0-9]{9,12}$/.test(email);
+    return /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email) || /^[0-9]{9,12}$/.test(email);
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -55,7 +56,10 @@ const Registration: React.FC = () => {
         const user = await registerUser(email, password);
         console.log("User registered:", user);
         alert("Registration successful!");
-      } catch (error) {
+        navigate("/login");
+        // Optionally navigate
+        // navigate("/login");
+      } catch (error: any) {
         console.error("Error during registration:", error);
         setErrors({ email: "Registration failed. Please try again." });
       }
@@ -67,24 +71,29 @@ const Registration: React.FC = () => {
   return (
     <div className="reg">
       <div className="registrationDiv">
+        {/* Login/Register buttons */}
         <div className="loginregcheck">
           <div className="logreg">
-            <button className="loginRegist" onClick={() => navigate("/Login")}>
+            <button
+              className={location.pathname === "/registration" ? "LoginPassive" : "loginRegist"}
+              onClick={() => navigate("/login")}
+            >
               Login
             </button>
-            <button className="registrationReg">Registration</button>
+
+            <button
+              className={location.pathname === "/registration" ? "registrationReg" : "registrationRegPassive"}
+              onClick={() => navigate("/registration")}
+            >
+              Registration
+            </button>
           </div>
-          <button
-            style={{
-              backgroundColor: "transparent",
-              border: "none",
-              cursor: "pointer",
-            }}
-          >
+          <button style={{ backgroundColor: "transparent", border: "none", cursor: "pointer" }}>
             <img className="checkbox" src={checkbox} alt="" />
           </button>
         </div>
 
+        {/* Registration form */}
         <form className="registrationREG" onSubmit={handleSubmit}>
           <input
             type="text"
@@ -108,11 +117,13 @@ const Registration: React.FC = () => {
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
           />
-          {errors.confirmPassword && <p style={{ color: "red", fontSize: "0.9rem" }}>{errors.confirmPassword}</p>}
+          {errors.confirmPassword && (
+            <p style={{ color: "red", fontSize: "0.9rem" }}>{errors.confirmPassword}</p>
+          )}
 
           <div className="checkboxAndText">
             <input className="checkboxSoc" type="checkbox" />
-            <a className="useSoc" href="">
+            <a className="useSoc" href="#">
               Use social network
             </a>
           </div>
@@ -123,8 +134,9 @@ const Registration: React.FC = () => {
           </div>
         </form>
 
+        {/* Social media buttons */}
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.75rem" }}>
-          <a className="useSoc" href="">
+          <a className="useSoc" href="#">
             Use social network
           </a>
           <div className="logos">

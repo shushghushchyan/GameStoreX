@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useState} from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import telegram from "../assets/Logos/telegram.svg";
 import facebook from "../assets/Logos/facebook.svg";
 import google from "../assets/Logos/google.svg";
@@ -16,6 +16,7 @@ interface Logo {
 
 const Login: React.FC = () => {
   const navigate = useNavigate();
+  const location = useLocation();
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -34,10 +35,11 @@ const Login: React.FC = () => {
     let newErrors: { email?: string; password?: string } = {};
 
     if (!email) {
-      newErrors.email = "Please enter your email.";
-    } else if (!isValidEmail(email)) {
-      newErrors.email = "Please enter a valid email address.";
+      newErrors.email = "Please enter your email or phone number.";
+    } else if (!isValidEmail(email) && !isValidPhoneNumber(email)) {
+      newErrors.email = "Please enter a valid email or phone number.";
     }
+    
 
     if (!password) {
       newErrors.password = "Please enter your password.";
@@ -76,7 +78,10 @@ const Login: React.FC = () => {
       setErrors(newErrors); 
     }
   };
-
+  const isValidPhoneNumber = (phone: string) => {
+    const phoneRegex = /^\+?\d{8,15}$/;
+    return phoneRegex.test(phone);
+  };
   const isValidEmail = (email: string) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
@@ -84,16 +89,25 @@ const Login: React.FC = () => {
 
   return (
     <div className="reg">
-      <div className="registrationDiv">
+      <div  className="registrationDiv  ">
         <div className="loginregcheck">
           <div className="logreg">
-            <button className="loginRegist">Login</button>
-            <button
-              className="registrationReg"
-              onClick={() => navigate("/Registration")}
-            >
-              Registration
-            </button>
+         
+<button
+  className={location.pathname === "/login" ? "loginRegist" : "LoginPassive"}
+  onClick={() => navigate("/login")}
+>
+Login
+</button>
+
+<button
+  className={location.pathname === "/login" ? "registrationRegPassive" : "registrationReg"}
+  onClick={() => navigate("/registration")}
+>
+  Registration
+</button>
+
+
           </div>
           <button
             style={{

@@ -313,16 +313,45 @@ border-radius: 20px;
 }
 .loginRegist{
   display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 33vw;
+  height: 5.6vh;
+  border-radius: 24px;
+  border:none;
+  color:#000000CC;
+  font-family: "Helvetica" ;
+  font-size: 0.75rem;
+  letter-spacing: 3%;
+
+}
+.LoginPassive{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 33vw;
+  height: 5.6vh;
+  border-radius: 24px;
+  border:none;
+  background: transparent;
+  color:rgba(255, 255, 255);
+  font-family: "Helvetica" ;
+  font-size: 0.75rem;
+  letter-spacing: 3%;
+}
+.registrationRegPassive{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 33vw;
   height: 5.6vh;
   border-radius: 24px;
   border:none;
   background-color: transparent;
-  color:white;
-  font-family: "Helvetica" ;
+  color:rgba(255, 255, 255);
   font-size: 0.75rem;
   letter-spacing: 3%;
-
+  
 }
 .registrationReg{
   display: flex;
@@ -333,6 +362,7 @@ border-radius: 20px;
   height: 5.6vh;
   border-radius: 24px;
   border:none;
+  background:rgba(255, 255, 255, 1) ;
   color:#000000CC;
   font-size: 0.75rem;
   letter-spacing: 3%;
