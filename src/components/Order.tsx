@@ -4,6 +4,7 @@ import success from '../assets/Logos/success.svg';
 import { ordersArray } from '../Data/ordersData';
 import Header from './Header.js';
 import chackbox from '../assets/Logos/checkbox.svg';
+import { useNavigate } from 'react-router-dom';
 
 interface OrderType {
   transactionId: string;
@@ -14,9 +15,16 @@ interface OrderType {
   amount: string;
 }
 
+
 export default function Order() {
   const { index } = useParams<{ index: string | undefined }>();
   const [order, setOrder] = useState<OrderType | null>(null);
+  const navigate = useNavigate();
+
+  const handleNavigateToOrders = () => {
+    navigate('/orders');
+  }
+  
 
   useEffect(() => {
     if (index !== undefined && !isNaN(Number(index))) {
@@ -31,8 +39,8 @@ export default function Order() {
     <div>
       <Header />
       <div className="arrowAndOrders">
-        <img src={chackbox} alt="" />
-        <h1 className="orderH1">{order ? `#${order.transactionId}` : 'Loading...'}</h1>
+        <img src={chackbox} onClick={handleNavigateToOrders} alt="" />
+        <h1  className="orderH1">{order ? `#${order.transactionId}` : 'Loading...'}</h1>
       </div>
 
       {order && (

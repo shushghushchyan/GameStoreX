@@ -16,15 +16,20 @@ interface OrderType {
 export default function Orders() {
   const navigate = useNavigate();
 
+
   const handleOrderClick = (index: number) => {
     navigate(`/order/${index}`);
   };
+
+  const handleNavigateToLogin = () => {
+    navigate("/login")
+  }
 
   return (
     <div className="orderPage">
       <Header />
       <div className="arrowAndOrders">
-        <img src={arrow} alt="" />
+        <img onClick = {handleNavigateToLogin} src={arrow} alt="" />
         <h1 className="orderH1">Orders</h1>
       </div>
       <main className="order">
