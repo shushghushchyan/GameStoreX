@@ -7,11 +7,13 @@ import Orders from './Orders';
 const MainLoginRegistration: React.FC = () => {
   const navigate = useNavigate();
 
+  
+
   return (
     <div className='loginRegistrationOrders'>
       <div className='logregblock'>         
-        <button className='loginregMain' onClick={() => navigate('/Registration')}>Registration</button>  
-        <button className='loginregMain' onClick={() => navigate('/Login')}>Login</button>
+        <button className='loginregMain' onClick={() => navigate('/registration')}>Registration</button>  
+        <button className='loginregMain' onClick={() => navigate('/login')}>Login</button>
       </div>
       
       <button className='orders' onClick={() => navigate('/Orders')}>Orders</button>
