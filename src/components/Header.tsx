@@ -57,7 +57,7 @@ export default function Header() {
 
     return (
         <div>
-            <header className='mainHeader'>
+            <header className='main-header'>
                 <button className="navigation-btn"></button>
                 <div className="lg-btn">
                     <button className='select-btn1' onClick={handleCurrency}>
@@ -65,14 +65,14 @@ export default function Header() {
                             <img className="currency-logo" src={currency} alt="Currency" />
                             <img className='dolar' src={dolar} alt="" />
                         </div>
-                        <h3 className='text-EN'>{selectedCurrency}</h3>
+                        <h3 className='text-en'>{selectedCurrency}</h3>
                     </button>
 
                     <button className='select-btn2' onClick={handleLanguage}>
                     <div className='lang-div'>
                         <img className="lang-logo" src={selectedlanguage === "UK" ? uk : en} alt="language" />
                      </div>
-                        <h3 className='text-EN'>{selectedlanguage}</h3>
+                        <h3 className='text-en'>{selectedlanguage}</h3>
                     </button>
                     <div className='rightlanguage'>
                     <img className="selected-lang-logo" src={selectedlanguage === "UK" ? uk : en} alt="language logo" />
@@ -89,20 +89,20 @@ export default function Header() {
                                         <img className="currency-logo" src={currency} alt="Currency" />
                                         <img className='dolar' src={dolar} alt="" />
                                     </div>
-                                    <h3 className='text-EN'>{item.currency}</h3>
+                                    <h3 className='text-en'>{item.currency}</h3>
                                 </button>
                             </li>
                         ))}
                     </ul>
                 </div>
 
-                <div className='languageDiv' style={{ display: showLanguage }}>
-                    <ul className='languageUl'>
+                <div className='language-div' style={{ display: showLanguage }}>
+                    <ul className='language-ul'>
                         {arrayLanguage.map((item, i) => (
                             <li className='languageLi' key={i}>
                                 <button onClick={() => handleSelectLanguage(i)}>
                                     <img className="language-logo" src={item.logo} alt="language logo" />
-                                    <h3 className='text-EN'>{item.language}</h3>
+                                    <h3 className='text-en'>{item.language}</h3>
                                 </button>
                             </li>
                         ))}
