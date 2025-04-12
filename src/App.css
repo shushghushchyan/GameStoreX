@@ -320,7 +320,7 @@ border-radius: 20px;
   color:#000000CC;
   font-family: "Helvetica" ;
   font-size: 0.75rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 1.6px;
 
 }
 .LoginPassive{
@@ -335,7 +335,7 @@ border-radius: 20px;
   color:rgba(255, 255, 255);
   font-family: "Helvetica" ;
   font-size: 0.75rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 1.6px;
 }
 .registrationRegPassive{
   display: flex;
@@ -348,7 +348,7 @@ border-radius: 20px;
   background-color: transparent;
   color:rgba(255, 255, 255);
   font-size: 0.75rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 1.6px;
   
 }
 .registrationReg{
@@ -363,7 +363,7 @@ border-radius: 20px;
   background:rgba(255, 255, 255, 1) ;
   color:#000000CC;
   font-size: 0.75rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 1.6px;
   
 }
 .checkbox{
@@ -425,7 +425,7 @@ input{
   color: rgba(0, 0, 0, 0.8); 
   font-size: 0.75rem;
   font-family: "Helvetica" ;
-  letter-spacing: 0.1rem;
+  letter-spacing: 1.6px;
 
 }
 .forgotepasswordDiv{
@@ -435,7 +435,7 @@ input{
 .forgotepassword{
 font-size: 0.75rem;
 font-family: "Helvetica" ;
-letter-spacing: 0.1rem;
+letter-spacing: 1.6px;
 font-weight: 400;
 color: rgba(255, 255, 255, 1);
 opacity: 50%;
@@ -469,7 +469,7 @@ text-decoration: underline;
   font-family: "Helvetica";
   color: #ffffff;
   font-weight: 400;
-  letter-spacing: 0.1rem;
+  letter-spacing: 1.6px;
   opacity: 50%;
 }
 .order__value{
@@ -480,7 +480,7 @@ text-decoration: underline;
   color: #ffffff;
   font-size: 0.75rem ;
   font-weight: 400;
-  letter-spacing: 0.1rem;
+  letter-spacing: 1.6px;
 }
 .card{
   display: flex;
@@ -513,7 +513,7 @@ text-decoration: underline;
   color: #ffffff;
   font-family: "Helvetica";
   font-weight: 700;
-  letter-spacing: 0.1rem;
+  letter-spacing: 1.6px;
 }
 .order__column {
   display: flex;
@@ -529,7 +529,7 @@ text-decoration: underline;
   font-family: "Helvetica";
   color: #ffffff;
   font-weight: 400;
-  letter-spacing: 0.1rem;
+  letter-spacing: 1.6px;
 
 }
 .secondDiv{
