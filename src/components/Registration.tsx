@@ -70,7 +70,6 @@ const Registration: React.FC = () => {
   return (
     <div className="reg">
       <div className="registrationDiv">
-        {/* Login/Register buttons */}
         <div className="loginregcheck">
           <div className="logreg">
             <button
@@ -132,7 +131,6 @@ const Registration: React.FC = () => {
           </div>
         </form>
 
-        {/* Social media buttons */}
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.75rem" }}>
           <a className="useSoc" href="#">
             Use social network
