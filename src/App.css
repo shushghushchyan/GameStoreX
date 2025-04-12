@@ -8,7 +8,7 @@
 .container {
   width: 100%;
   max-width: 320px;
-  padding: 12px;
+  padding: 0.75rem;
 }
 
 .main-header{
@@ -225,8 +225,8 @@ border-radius: 7.74vh;
 font-family: "Helvetica";
 background: #FFFFFF;
 color: #000000CC;
-padding: 12px;
-font-size: 12px;
+padding: 0.75rem;
+font-size: 0.75rem;
 border-radius: 20px;
 }
 .loginregblock{
@@ -245,7 +245,7 @@ border-radius: 20px;
   font-weight: 400;
   background:#FFFFFF;
   font-family: "Helvetica";
-  letter-spacing: 3%;
+  letter-spacing: 0.1rem;
   
   }
 .orders{
@@ -298,7 +298,7 @@ border-radius: 20px;
   display: flex;
   width: 70vw;
   height: auto;
-  padding: 12px;
+  padding: 0.75rem;
   background: #2D2F35;
   border-radius: 24px;
   gap:1.25vw;
@@ -379,7 +379,7 @@ border-radius: 20px;
   gap:1.76vh;
   width: 82.5vw;
   color: rgba(0, 0, 0, 0.8);
-  font-size: 12;
+  font-size: 0.75rem;
   font-family: "Helvetica" ;
 
 }
@@ -388,9 +388,9 @@ input{
   height: 7.74vh;
   border-radius: 16px;
   border: 1px;
-  border-color: #FFFFFF1F 12%;
+  border-color: #FFFFFF1F;
   background: #0D0F11;
-  padding:  12px ;
+  padding:  0.75rem ;
   color: #FFFFFF;
 
 }
@@ -423,7 +423,7 @@ input{
   border-radius: 20px;
   background: #FFFFFF;
   color: rgba(0, 0, 0, 0.8); 
-  font-size: 12px;
+  font-size: 0.75rem;
   font-family: "Helvetica" ;
   letter-spacing: 0.1rem;
 

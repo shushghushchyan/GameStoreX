@@ -27,7 +27,7 @@ body {
 }
 
 .text-EN{
-  font-size: 12px;
+  font-size:0.75rem;
   font-weight: 400;
   font-family: 'Helvetica';
   color: white;
@@ -44,5 +44,4 @@ button {
 input:-webkit-autofill,
 input:-webkit-autofill:focus {
   background-color: white !important;
-  /* transition: background-color 5000s ease-in-out 0s; */
 }
